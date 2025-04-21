@@ -55,7 +55,7 @@ const Navbar = ({ setSearch }) => {
         } bg-rose-900 text-white flex flex-col items-center md:hidden relative z-[150] backdrop-blur-3xl bg-opacity-90`}
       >
         <ul className="flex flex-col gap-5 text-lg">
-          <li>Categories</li>
+          <li> <Link to="/category">Categories</Link></li>
         </ul>
 
         <form

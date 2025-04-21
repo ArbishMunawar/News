@@ -6,7 +6,7 @@ const Card = ({ data }) => {
       {data.map((article, index) => (
         <div
           key={index}
-          className="bg-white rounded-2xl shadow-xl overflow-hidden transition-transform hover:scale-110"
+          className="bg-white rounded-2xl my-7 shadow-xl overflow-hidden transition-transform hover:scale-110"
         >
           {article.urlToImage && (
             <img
@@ -15,7 +15,7 @@ const Card = ({ data }) => {
               className="w-full  object-cover"
             />
           )}
-          <div className="p-4">
+          <div className="p-4 ">
             <h2 className="text-lg font-semibold mb-2">{article.title}</h2>
             <p className="text-gray-600 text-sm mb-3">
               {article.description}
