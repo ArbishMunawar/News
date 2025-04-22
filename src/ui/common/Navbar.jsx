@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import MenuIcon from "../../assets/icons/MenuIcon";
+import SearchIcon from "../../assets/icons/SearchIcon";
 
 const Navbar = ({ setSearch }) => {
   const [open, setOpen] = useState(false);
@@ -21,7 +22,10 @@ const Navbar = ({ setSearch }) => {
         <div className="text-white hidden md:flex items-center gap-9 font-semibold">
           <ul>
             <li>
-              <Link to="/category">Categories</Link>
+              <Link to="/home">Home</Link>
+              <Link to="/category" className="pl-9">
+                Categories
+              </Link>
             </li>
           </ul>
 
@@ -37,7 +41,7 @@ const Navbar = ({ setSearch }) => {
               className="bg-transparent outline-none text-white placeholder-gray-300"
             />
             <button type="submit" className="text-white">
-              🔍
+              <SearchIcon className="text-white cursor-pointer" />
             </button>
           </form>
         </div>
@@ -55,7 +59,10 @@ const Navbar = ({ setSearch }) => {
         } bg-rose-900 text-white flex flex-col items-center md:hidden relative z-[150] backdrop-blur-3xl bg-opacity-90`}
       >
         <ul className="flex flex-col gap-5 text-lg">
-          <li> <Link to="/category">Categories</Link></li>
+          <li className="flex flex-col gap-5 text-lg">
+          <Link to="/home">Home</Link>
+            <Link to="/category" >Categories</Link>
+          </li>
         </ul>
 
         <form
@@ -70,7 +77,7 @@ const Navbar = ({ setSearch }) => {
             className="bg-transparent outline-none text-white placeholder-gray-300"
           />
           <button type="submit" className="text-white cursor-pointer">
-            🔍
+           <searchIcon className="text-white cursor-pointer" />
           </button>
         </form>
       </div>
