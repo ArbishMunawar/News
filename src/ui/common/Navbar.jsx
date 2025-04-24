@@ -77,7 +77,7 @@ const Navbar = ({ setSearch }) => {
             className="bg-transparent outline-none text-white placeholder-gray-300"
           />
           <button type="submit" className="text-white cursor-pointer">
-           <searchIcon className="text-white cursor-pointer" />
+           <SearchIcon className="text-white cursor-pointer" />
           </button>
         </form>
       </div>
