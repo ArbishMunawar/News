@@ -69,8 +69,9 @@ const CategoryPage = () => {
                   {newsData[cat].map((article, idx) => (
                     <li key={idx} className="shadow-2xl  p-4 rounded-xl">
                       <img src={article.urlToImage} alt="" />
-                      <h3 className="font-semibold">{article.title}</h3>
-                      <p>{article.description}</p>
+                      <h3 className="font-semibold elispse">{article.title}</h3>
+                      <p className="elispse">{article.description}</p>
+                      
                     </li>
                   ))}
                 </ul>

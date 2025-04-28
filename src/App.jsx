@@ -8,11 +8,13 @@ export default function Root() {
 
   return (
     <>
+    <div className="layout">
       <Navbar setSearch={setSearch} />
       <main >
         <Outlet context={{ search }} />
       </main>
       <Footer />
+      </div>
     </>
   );
 }
