@@ -1,9 +1,10 @@
 import React from "react";
 import Picture from '../../assets/images/Picture.png'
-const Card = ({ data }) => {
+const NewsCards = ({ data }) => {
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 p-4 lg:grid-cols-3 md:gap-[3rem] lg:gap-[5rem] lg:mx-[5rem] mt-9">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 p-4 lg:grid-cols-3 md:gap-[3rem] lg:gap-[5rem] lg:mx-[5rem] ">
+    
       {data.map((article, index) => (
         <div
           key={index}
@@ -36,5 +37,5 @@ const Card = ({ data }) => {
   );
 };
 
-export default Card;
+export default NewsCards;
 

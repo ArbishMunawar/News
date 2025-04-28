@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const API_KEY = "350ac79638fe4f7db17bfff97d382b20";
+const API_KEY = "3d381e2f38944e22bce5046a7bcc25a4";
 const categories = [
   "general", "business", "entertainment", "health", "science", "sports", "technology"
 ];
